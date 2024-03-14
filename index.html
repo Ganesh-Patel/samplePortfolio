@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url('https://t4.ftcdn.net/jpg/04/60/71/01/360_F_460710131_YkD6NsivdyYsHupNvO3Y8MPEwxTAhORh.jpg'); /* Replace 'background_image.jpg' with the path to your image */
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff; /* Text color */
+        }
+        form {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background color for the form */
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 500px;
+            border-radius: 10px;
+        }
+        label {
+            color: #fff; /* Label text color */
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+            vertical-align: middle;
+        }
+        button {
+            background-color: #4CAF50; /* Green background color for buttons */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+        #image-container {
+            margin-bottom: 20px;
+        }
+        #image-container img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset><legend>Personal Details</legend>
+        <label for="first name">First Name:</label>
+        <input type="text" name="first name" id="fn"  placeholder="First name"/><br>
+
+        <label for="Middle Name">Middle Name:</label>
+        <input type="text" name="Middle Name" id="mn"   placeholder="Middle name" /><br>
+
+        <label for="Last Name">Last Name:</label>
+        <input type="text" name="Last Name" id="ln"   placeholder="Last name" /><br>
+
+        <label for="Course">Course:</label>
+        <select name="Course" id="course">
+            <option value="">Java</option>
+            <option value="1">Python</option>
+            <option value="2">My Sql</option>
+            <option value="3">Testing</option>
+            <option value="4">HR</option>
+        </select><br>
+
+        <label>Gender:</label><br>
+        <label for="male">Male</label> <input type="radio" name="Gender"  value="Male" id="male" />
+        <label for="female">Female</label><input type="radio" name="Gender" value="female" id="female" />
+        <label for="other">Other</label><input type="radio" name="Gender" value="Other" id="Other" /><br><br>
+
+        <label for="dob">DOB:</label><br>
+        <input type="date" name="dob" id="dob" /><br>
+
+        <label for="phone">Phone:</label>
+        <select id="country_code" name="country_code" required>
+            <option value="+91">+91</option>
+            <option value="+92">+92</option>
+            <option value="+93">+93</option>
+            <option value="+94">+94</option>
+            <option value="+95">+95</option>
+            <!-- Add more country codes as needed -->
+        </select>
+        <input type="tel" id="phone" name="phone" required  placeholder="Phone no"><br>
+
+        <label for="Add">Address:</label><br>
+        <textarea name="Add" style="height: 100px;width: 100%;" placeholder="Address"></textarea><br>
+
+        <label for="Email">Email:</label>
+        <input type="email" name="Email" id="email" placeholder="abc@gmail.com" /><br>
+
+        <label for="Password">Password:</label>
+        <input type="password" name="Password" id="Password" placeholder="Password" /><br>
+
+        <label for="RePassword">Re-Type-Password:</label>
+        <input type="password" name="RePassword" id="RePassword" placeholder="Re-Type-Password" /><br>
+
+        <input name="terms" type="checkbox" id="terms" />
+        <label for="terms">Agree to terms and conditions</label><br>
+
+        <label for="file">Choose File:</label>
+        <input type="file" name="file" id="file" /><br>
+
+        <label for="color">Choose color:</label>
+        <input type="color" name="color" id="color" /><br>
+
+        <button id="reset">Reset</button>
+        <button id="Submit">Submit</button>
+    </form>
+</body>
+</html>
