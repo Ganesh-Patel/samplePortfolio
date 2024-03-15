@@ -1,57 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🏏 Tribute to Virat Kohli 🏏</title>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+            background-image: url('https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?size=626&ext=jpg&ga=GA1.1.735520172.1710460800&semt=ais'); 
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat; 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+        }
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+
+.navbar {
+            background-color: black;
+            overflow: hidden; /* Clear floats */
+        }
+
+        /* Style for the links in the navbar */
+        .navbar a {
+            float: left; /* Float the links to the left */
+            display: block;
+            color: white;
+            text-align: center; /* Center text within links */
+            text-decoration: none;
+            padding: 14px 16px; /* Adjust padding as needed */
+        }
+
+        /* Style for the hover effect */
+        .navbar a:hover {
+            background-color: #333; /* Darker background on hover */
+        }
+
+article {
+  float: left;
+  padding: 20px;
+  width: 25%;
+  background-color: #f1f1f1;
+  height: 800px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <h1>🏏 Tribute to Virat Kohli 🏏</h1>
-    
-    <!-- Introduction -->
-    <section>
-        <h2>Introduction</h2>
-        <p>A spunky, chubby teenager with gelled hair shot to fame after leading India to glory in the Under-19 World Cup at Kuala Lumpur in early 2008. In an Indian team filled with saint-like icons worthy of their own hagiographies, Virat Kohli, with his most un-Indian, 'bad-boy' intensity, would clearly be an outcast.</p>
-    </section>
+<header>
+  <h2>Ganesh-Patel</h2>
+</header>
 
-    <!-- Tweets -->
-    <section>
-        <h2>Tweets</h2>
-        <!-- Embed tweets here -->
-        <p>No tweets available.</p>
-    </section>
+<section>
+  <nav>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Portfolio</a>
+        <a href="#">Contact</a>
+    </div>
+  </nav>
+  
+  <article>
+    <img src="/home/administrator/Downloads/&gggggg256.jpg" height="120px" width="120px" />
+    <h3>Mr.Ganesh(Software Developer)</h2>
+        <p>
+            Mr. Ganesh is a skilled software developer based in Delhi, India, with a passion for crafting cutting-edge solutions. 
+            <br><br>
+            With a background in M.Sc. from Kumaun University Nainital, he brings a wealth of knowledge in Java, JavaScript, Git, Python, HTML & CSS. 
+            <br><br>
+            Currently employed at Image Infosystems Pvt Limited, Mr. Ganesh collaborates closely with development and testing teams to deliver high-quality software solutions. 
+            <br><br>
+            Beyond his professional endeavors, Mr. Ganesh is an avid learner, constantly seeking to expand his skill set and contribute meaningfully to the tech community.
+        </p>
+          </article>
+</section>
 
-    <!-- Images -->
-    <section>
-        <h2>Images</h2>
-        <!-- Display images here -->
-        <p>No images available.</p>
-    </section>
+<footer>
+    <p>&copy; 2024 Ganesh-Patel. All rights reserved.</p>
+</footer>
 
-    <!-- Instagram -->
-    <section>
-        <h2>Instagram</h2>
-        <!-- Embed Instagram post/feed here -->
-        <p>No Instagram posts available.</p>
-    </section>
-
-    <!-- Google Map -->
-    <section>
-        <h2>Google Map</h2>
-        <!-- Embed Google Map here -->
-        <p>No Google Map available.</p>
-    </section>
-
-    <!-- Favourite Songs -->
-    <section>
-        <h2>Favourite Songs</h2>
-        <!-- Include audio files of favourite songs here -->
-        <p>No favourite songs available.</p>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Tribute to Virat Kohli. All rights reserved.</p>
-    </footer>
 </body>
 </html>
+
